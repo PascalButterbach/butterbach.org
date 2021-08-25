@@ -1,0 +1,48 @@
+:root{
+    --background-color-header: #f8f8f8;
+    --background-color: #fdfdfd;
+    --background-color-offset: #f8f8f8;
+    --background-color-toggle:#303030;
+  
+    --text-color: #222222; 
+    --text-color-opposite: #ffffff; 
+    --shadow-color: #3d3d3d2f;
+  
+    --section-gradient-from:#00000000;  
+    --section-gradient-to:#acacac26;
+    
+    --border-color: #dee2e6;
+  
+    --text-color-accent: #ff003c; 
+  
+    --tri-1: url(tri1.png);
+    --tri-2: url(tri2.png);
+    --tri-3: url(tri3.png);
+    --profile: url(profil.png);
+    --logo: url(logo.png);
+    
+  }
+  
+  [data-theme="darkMode"] {
+    --background-color-header: #252525;  
+    --background-color: #303030;
+    --background-color-offset: #252525;
+    --background-color-toggle:#fdfdfd;
+  
+    --text-color: #dfdfdf;   
+    --text-color-opposite: #303030; 
+    --shadow-color: #3a3939; 
+    
+    --section-gradient-from:#00000000;  
+    --section-gradient-to:#3a3939b2;
+  
+    --border-color: #747474;
+  
+    --text-color-accent: #39ff14; 
+  
+    --tri-1: url(tri1_alt.png);
+    --tri-2: url(tri2_alt.png);
+    --tri-3: url(tri3_alt.png);
+    --profile: url(profil_alt.png);
+    --logo: url(logo_alt.png);
+  }

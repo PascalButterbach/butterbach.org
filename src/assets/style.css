@@ -1,0 +1,146 @@
+body {
+  background-color: var(--background-color);
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--section-gradient-to);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-color-accent);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--background-color-toggle);
+}
+
+.fa-rotate-90 {
+  filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+p {
+  font-weight: 400;
+  font-size: .9rem;
+  letter-spacing: 1px;
+  color: var(--text-color);
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 70px;
+  font-size: 45px;
+  line-height: 44px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color);
+}
+
+h1:before, h1:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: var(--text-color-accent);
+}
+
+h1:before {
+  bottom: -21px;
+  width: 60%;
+  height: 3px;
+}
+
+h1:after {
+  bottom: -28px;
+  width: 40px;
+  height: 10px;
+}
+
+a.butti-btn, a.butti-btn:focus, a.butti-btn:hover {
+  text-decoration: none;
+}
+
+.butti-btn {
+  margin: 20px 0;
+  background: var(--background-color);
+  text-transform: capitalize;
+  color: var(--text-color-accent);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 0;
+  padding: 30px 44px;
+  border: 1px solid var(--text-color-accent);
+  transition: color 0.4s linear;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.butti-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--text-color-accent) !important;
+  z-index: 1;
+  transition: transform 0.7s;
+  transition-timing-function: ease;
+  transform-origin: 100%;
+  transition-timing-function: cubic-bezier(.58, 1.83, .47, .42);
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+.butti-btn:hover {
+  color: var(--text-color-opposite);
+}
+
+.butti-btn:hover::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+  color: var(--text-color-accent) !important;
+  z-index: -1;
+}
+
+.butti-btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 .25rem var(--text-color-accent);
+}
+
+.transition {
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--text-color-accent) !important;
+}
